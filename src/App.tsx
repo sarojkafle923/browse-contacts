@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import { useEffect, useState } from 'react';
+
+import { ContactDetails } from './types/ContactDetails';
+
 function App() {
+  const [contactList, setContactList] = useState<ContactDetails[]>([]);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((data) => setContactList(data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>
+        <b>Available contact details</b>
+      </h1>
+      <table className='ContactTable'>
+        <tr>
+          <th id='name'>Name</th>
+          <th id='email'>Email Address</th>
+          <th id='phone'>Phone Number</th>
+          <th id='company'>Company Name</th>
+          <th id='website'>Website</th>
+          <th id='city'>Located City </th>
+        </tr>
+        {contactList.map((contact) => (
+          <tr key={contact.id}>
+            <td id='name'>{contact.name}</td>
+            <td id='email'>{contact.email}</td>
+            <td id='phone'>{contact.phone}</td>
+            <td id='company'>{contact.company.name}</td>
+            <td id='website'>{contact.website}</td>
+            <td id='city'>{contact.address.city}</td>
+          </tr>
+        ))}
+      </table>
     </div>
   );
 }

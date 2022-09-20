@@ -28,6 +28,37 @@
   color: #61dafb;
 }
 
+.ContactTable {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+
+.ContactTable td,
+.ContactTable th {
+  border: 1px solid;
+  width: fit-content;
+  padding: 8px;
+}
+
+.ContactTable tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+.ContactTable tr:hover {
+  background-color: #ddd;
+}
+
+.ContactTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

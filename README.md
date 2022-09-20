@@ -1,6 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions
+Clone this repo [https://github.com/sarojkafle923/browse-contacts.git] or alternative you can download the zip file on your local directory.
+Next, npm install on the current directory where you have clone or download this repo to include the required dependencies on your node modules.
+finally, command `npm start` to run the application locally on development mode.
 
 ## Available Scripts
 

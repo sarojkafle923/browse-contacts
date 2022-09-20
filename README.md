@@ -3,6 +3,13 @@ Clone this repo https://github.com/sarojkafle923/browse-contacts.git or alternat
 Next, npm install on the current directory where you have clone or download this repo to include the required dependencies on your node modules.
 finally, command `npm start` to run the application locally on development mode.
 
+## Sample Output
+![image](https://user-images.githubusercontent.com/64567189/191263118-46407789-1945-44f6-92ba-154dff6ac2c9.png)
+ 
+## Code Sample
+![image](https://user-images.githubusercontent.com/64567189/191263344-31080053-1cb6-4727-a444-766e0c739c02.png)
+![image](https://user-images.githubusercontent.com/64567189/191263429-afe509b7-deb8-4288-a217-30d415a3ea7a.png)
+
 ## Available Scripts
 
 In the project directory, you can run:

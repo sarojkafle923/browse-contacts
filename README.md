@@ -1,5 +1,5 @@
 ## Instructions
-Clone this repo [https://github.com/sarojkafle923/browse-contacts.git] or alternative you can download the zip file on your local directory.
+Clone this repo https://github.com/sarojkafle923/browse-contacts.git or alternative you can download the zip file on your local directory.
 Next, npm install on the current directory where you have clone or download this repo to include the required dependencies on your node modules.
 finally, command `npm start` to run the application locally on development mode.
 
